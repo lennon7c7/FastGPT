@@ -52,12 +52,12 @@ function App({ Component, pageProps }: AppProps) {
       setTitle(systemTitle || 'FastGPT');
 
       // log fastgpt
-      !isPlus &&
-        console.log(
-          '%cWelcome to FastGPT',
-          'font-family:Arial; color:#3370ff ; font-size:18px; font-weight:bold;',
-          `GitHub：https://github.com/labring/FastGPT`
-        );
+      // !isPlus &&
+      //   console.log(
+      //     '%cWelcome to FastGPT',
+      //     'font-family:Arial; color:#3370ff ; font-size:18px; font-weight:bold;',
+      //     `GitHub：https://github.com/labring/FastGPT`
+      //   );
       setScripts(scripts || []);
     })();
 

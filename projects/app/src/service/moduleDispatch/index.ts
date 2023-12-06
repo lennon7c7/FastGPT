@@ -304,6 +304,11 @@ export function responseStatus({
   name?: string;
 }) {
   if (!name) return;
+
+  if (name === 'AI 对话') {
+    name = '';
+  }
+
   responseWrite({
     res,
     event: sseResponseEventEnum.moduleStatus,

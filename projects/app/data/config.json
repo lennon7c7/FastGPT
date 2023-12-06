@@ -7,6 +7,16 @@
   },
   "ChatModels": [
     {
+      "model": "chatglm_lite",
+      "name": "chatglm_lite",
+      "maxToken": 16000,
+      "price": 0.02,
+      "quoteMaxToken": 8000,
+      "maxTemperature": 1.2,
+      "censor": false,
+      "defaultSystemChatPrompt": ""
+    },
+    {
       "model": "gpt-3.5-turbo-1106",
       "name": "GPT35-1106",
       "price": 0,
@@ -105,6 +115,13 @@
     }
   ],
   "VectorModels": [
+    {
+      "model": "text2vec",
+      "name": "text2vec",
+      "price": 0,
+      "defaultToken": 700,
+      "maxToken": 3000
+    },
     {
       "model": "text-embedding-ada-002",
       "name": "Embedding-2",

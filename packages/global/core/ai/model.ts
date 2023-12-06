@@ -10,6 +10,18 @@ import type {
 
 export const defaultChatModels: ChatModelItemType[] = [
   {
+    model: 'chatglm_lite',
+    name: 'chatglm_lite',
+    price: 0,
+    maxContext: 16000,
+    maxResponse: 16000,
+    quoteMaxToken: 8000,
+    maxTemperature: 1.2,
+    censor: false,
+    vision: false,
+    defaultSystemChatPrompt: ''
+  },
+  {
     model: 'gpt-3.5-turbo-1106',
     name: 'GPT35-1106',
     price: 0,
@@ -109,6 +121,13 @@ export const defaultQGModels: LLMModelItemType[] = [
 ];
 
 export const defaultVectorModels: VectorModelItemType[] = [
+  {
+    model: 'text2vec',
+    name: 'text2vec',
+    price: 0,
+    defaultToken: 700,
+    maxToken: 3000
+  },
   {
     model: 'text-embedding-ada-002',
     name: 'Embedding-2',
